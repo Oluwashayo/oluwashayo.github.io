@@ -7,6 +7,10 @@ importance: 7
 category: side projects
 ---
 
-Small web tools built for church youth ministry—interactive Bible memory games and quizzes used with teenagers, reflecting a broader interest in skills-focused programming for Nigerian secondary school students.
+A collection of lightweight, interactive web utilities and gamified quizzes designed for church youth ministry, helping teenagers engage with scripture memorization and biblical literacy. Built with an emphasis on speed, clean mobile typography, and playful interaction design.
+
+The tools feature progressive difficulty modes, mnemonic verse reconstructors, and timed quiz challenges that can be deployed individually or projected in group workshop settings. The application mechanics prioritize positive feedback loops and spaced repetition principles.
+
+This project reflects Emmanuel's broader dedication to community education and skills development, serving as an incubator for experimental educational tools and youth-focused software engineering curricula in Nigeria.
 
 <!-- TODO(shayo) — screenshot, and a link if any of them are hosted -->

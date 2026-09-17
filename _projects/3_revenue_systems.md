@@ -7,11 +7,10 @@ importance: 3
 category: systems
 ---
 
-Product management and release documentation for three production revenue systems:
-- **Taxpayer identification system**
-- **E-receipt payment management platform**: prepaid organisation wallets, payment profile settlement, reversals, receipts, and comprehensive financial reports.
-- **Fleet management platform**: web portal plus mobile app with two-level trip approvals.
+As Product Manager at TekSphere Global Services, Emmanuel led the product definition, lifecycle delivery, and system documentation for three mission-critical public-sector platforms deployed for a Nigerian State Joint Revenue Board. These systems modernised state-wide fiscal operations, transitioning legacy paper workflows into transparent, digital architectures.
 
-Authored complete user manuals and technical API documentation, and conducted role-based executive training.
+The portfolio encompassed three enterprise platforms: a centralised taxpayer identification system; an e-receipt payment management engine supporting prepaid organisation wallets, payment profile settlement, automated reversals, and auditable financial reporting; and an institutional fleet management portal with real-time operational oversight.
+
+Beyond technical delivery, Emmanuel authored complete end-user manuals, operational standard operating procedures, and developer API documentation. He also facilitated multi-day, role-based executive training programs for revenue board directors, operational staff, and corporate taxpayers to ensure seamless adoption.
 
 <!-- TODO(shayo) — confirm what you are permitted to publish about a government client, and swap any screenshots for redacted ones or generic diagrams -->
