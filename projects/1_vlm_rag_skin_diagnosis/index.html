@@ -1,0 +1,232 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> VLM-RAG skin disease diagnosis and information system | Shayo Balogun </title> <meta name="author" content="Emmanuel Ayomide Balogun"> <meta name="description" content="Fine-tuned a vision–language model paired with retrieval-augmented generation grounded in dermatological text."> <meta name="keywords" content="vision-language models, medical image analysis, AI for healthcare, retrieval-augmented generation, LLaVA, Nigeria, FUTA"> <meta property="og:site_name" content="Shayo Balogun"> <meta property="og:type" content="website"> <meta property="og:title" content="Shayo Balogun | VLM-RAG skin disease diagnosis and information system"> <meta property="og:url" content="https://oluwashayo.github.io/projects/1_vlm_rag_skin_diagnosis/"> <meta property="og:description" content="Fine-tuned a vision–language model paired with retrieval-augmented generation grounded in dermatological text."> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="VLM-RAG skin disease diagnosis and information system"> <meta name="twitter:description" content="Fine-tuned a vision–language model paired with retrieval-augmented generation grounded in dermatological text."> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Emmanuel Ayomide Balogun"
+        },
+        "url": "https://oluwashayo.github.io/projects/1_vlm_rag_skin_diagnosis/",
+        "@type": "WebSite",
+        "description": "Fine-tuned a vision–language model paired with retrieval-augmented generation grounded in dermatological text.",
+        "headline": "VLM-RAG skin disease diagnosis and information system",
+        
+        "sameAs": [null,"https://github.com/oluwashayo","https://www.linkedin.com/in/TODO(shayo)","https://scholar.google.com/citations?user=TODO(shayo)","https://orcid.org/TODO(shayo)"],
+        
+        "name": "Emmanuel Ayomide Balogun",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%94%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://oluwashayo.github.io/projects/1_vlm_rag_skin_diagnosis/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Shayo Balogun </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">VLM-RAG skin disease diagnosis and information system</h1> <p class="post-description">Fine-tuned a vision–language model paired with retrieval-augmented generation grounded in dermatological text.</p> </header> <article> <p>Fine-tuned a vision–language model for skin lesion images and paired it with a retrieval-augmented generation layer so answers are grounded in retrievable dermatological text rather than generated from model weights alone.</p> <p>This work serves as the foundation of both 2026 conference papers with supervisor Olukemi Victoria Olatunde:</p> <ul> <li><a class="citation" href="#olatunde2026integrated">(Olatunde et al., 2026)</a></li> <li><a class="citation" href="#olatunde2026development">(Olatunde et al., 2026)</a></li> </ul> </article> <h2>References</h2> <div class="publications"> <h2 class="bibliography">2026</h2> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ECAT’26</abbr> </div> <div id="olatunde2026integrated" class="col-sm-8"> <div class="title">Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System</div> <div class="author"> <a href="TODO(shayo)">Olukemi Victoria Olatunde</a>, <em>Emmanuel Ayomide Balogun</em>, and Victoria Ibiyemi Omoniyi </div> <div class="periodical"> <em>In 1st International Conference on Emerging Computing Applications and Technologies (ECAT’26), School of Computing, Federal University of Technology Akure</em>, Jul 2026 </div> <div class="periodical"> Accepted for presentation, 15–16 July 2026. Selected papers to appear in the International Journal of Computing and Digital Innovation </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/TODO(shayo)%20drop%20the%20paper%20in%20assets/pdf/%20and%20put%20the%20filename%20here,%20or%20delete%20this%20line" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="abstract hidden"> <p>TODO(shayo) paste the accepted abstract here</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">olatunde2026integrated</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Olatunde, Olukemi Victoria and Balogun, Emmanuel Ayomide and Omoniyi, Victoria Ibiyemi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{1st International Conference on Emerging Computing Applications and Technologies (ECAT'26), School of Computing, Federal University of Technology Akure}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Akure, Nigeria}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Accepted for presentation, 15--16 July 2026. Selected papers to appear in the International Journal of Computing and Digital Innovation}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ASBAMI’26</abbr> </div> <div id="olatunde2026development" class="col-sm-8"> <div class="title">Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System</div> <div class="author"> <a href="TODO(shayo)">Olukemi Victoria Olatunde</a>, <em>Emmanuel Ayomide Balogun</em>, and Victoria Ibiyemi Omoniyi </div> <div class="periodical"> <em>In 5th African Symposium on Big Data, Analytics and Machine Intelligence (ASBAMI 2026), Federal University of Technology Akure</em>, 2026 </div> <div class="periodical"> Under review </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>TODO(shayo) paste the submitted abstract here</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">olatunde2026development</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Olatunde, Olukemi Victoria and Balogun, Emmanuel Ayomide and Omoniyi, Victoria Ibiyemi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{5th African Symposium on Big Data, Analytics and Machine Intelligence (ASBAMI 2026), Federal University of Technology Akure}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Akure, Nigeria}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Under review}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Emmanuel Ayomide Balogun. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: September 17, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Research projects, production systems, and side projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Curriculum Vitae of Emmanuel Ayomide (Shayo) Balogun.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "news-graduated-from-futa-with-first-class-honours-in-software-engineering",
+          title: 'Graduated from FUTA with First Class Honours in Software Engineering.',
+          description: "",
+          section: "News",},{id: "news-our-paper-integrated-vlm-rag-powered-skin-disease-diagnosis-and-information-system-was-accepted-for-presentation-at-ecat-26-school-of-computing-futa",
+          title: 'Our paper Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System was accepted for...',
+          description: "",
+          section: "News",},{id: "news-submitted-development-of-a-vlm-rag-powered-skin-disease-diagnosis-and-information-system-to-asbami-2026-under-review",
+          title: 'Submitted Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System to ASBAMI...',
+          description: "",
+          section: "News",},{id: "news-began-nysc-service-in-delta-state",
+          title: 'Began NYSC service in Delta State.',
+          description: "",
+          section: "News",},{id: "news-presented-at-ecat-26-in-akure",
+          title: 'Presented at ECAT’26 in Akure.',
+          description: "",
+          section: "News",},{id: "projects-vlm-rag-skin-disease-diagnosis-and-information-system",
+          title: 'VLM-RAG skin disease diagnosis and information system',
+          description: "Fine-tuned a vision–language model paired with retrieval-augmented generation grounded in dermatological text.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_vlm_rag_skin_diagnosis/";
+            },},{id: "projects-taxman-a-multimodal-agent-for-nigerian-tax-filing",
+          title: 'Taxman — a multimodal agent for Nigerian tax filing',
+          description: "Multimodal AI agent orchestrated with n8n and grounded in the Nigeria Tax Act 2025.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_taxman/";
+            },},{id: "projects-revenue-systems-for-a-state-joint-revenue-board",
+          title: 'Revenue systems for a state joint revenue board',
+          description: "Product management and release documentation for production tax ID, e-receipt, and fleet platforms.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_revenue_systems/";
+            },},{id: "projects-fleet-management-platform",
+          title: 'Fleet management platform',
+          description: "Web portal and mobile app with two-level trip approvals and vehicle tracking.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_fleet_management/";
+            },},{id: "projects-abbis-farm-commerce-and-operations-platform",
+          title: 'Abbis Farm — commerce and operations platform',
+          description: "Next.js 15 App Router e-commerce, POS, and operations platform for a red palm oil producer.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_abbis_farm/";
+            },},{id: "projects-authoring-evaluation-tasks-for-coding-agents",
+          title: 'Authoring evaluation tasks for coding agents',
+          description: "SWE-Bench-Pro-style repository evaluation tasks and precision-constrained ML grading harnesses.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_agent_evaluation_tasks/";
+            },},{id: "projects-quiz-and-memory-tools-for-teenagers",
+          title: 'Quiz and memory tools for teenagers',
+          description: "Small web tools, quizzes, and Bible memory games built for church youth ministry.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_bible_memory_tools/";
+            },},{id: "projects-webgl-network-scene",
+          title: 'WebGL network scene',
+          description: "Interactive Three.js network animation representing a living motherboard.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_webgl_network_scene/";
+            },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/shayo_balogun_cv.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%54%4F%44%4F(%73%68%61%79%6F)", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/oluwashayo", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/TODO(shayo)", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=TODO(shayo)", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/TODO(shayo)", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
