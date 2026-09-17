@@ -10,17 +10,17 @@
 
 ## 0. Identity
 
-| Field | Value |
-| --- | --- |
-| Full name | Emmanuel Ayomide Balogun |
-| Goes by | Shayo |
-| Site title | Shayo Balogun |
-| Role | Product Manager, TekSphere Global Services Limited — Lagos, Nigeria |
-| Also | NYSC corps member, Delta State |
-| Degree | B.Tech Software Engineering, First Class Honours — Federal University of Technology, Akure (FUTA) |
-| GitHub | `oluwashayo` |
-| Site URL | `https://oluwashayo.github.io` |
-| Research area | Vision–language models; medical image analysis; AI for healthcare; retrieval-augmented generation; trustworthy generative AI |
+| Field           | Value                                                                                                                                  |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Full name       | Emmanuel Ayomide Balogun                                                                                                               |
+| Goes by         | Shayo                                                                                                                                  |
+| Site title      | Shayo Balogun                                                                                                                          |
+| Role            | Product Manager, TekSphere Global Services Limited — Lagos, Nigeria                                                                    |
+| Also            | NYSC corps member, Delta State                                                                                                         |
+| Degree          | B.Tech Software Engineering, First Class Honours — Federal University of Technology, Akure (FUTA)                                      |
+| GitHub          | `oluwashayo`                                                                                                                           |
+| Site URL        | `https://oluwashayo.github.io`                                                                                                         |
+| Research area   | Vision–language models; medical image analysis; AI for healthcare; retrieval-augmented generation; trustworthy generative AI           |
 | Purpose of site | Application-facing academic portfolio for PhD / funded MSc applications, September–October 2027 intake (UK, Europe, Canada, Australia) |
 
 ---
@@ -170,8 +170,8 @@ Delete every Einstein entry and the `@string{aps = ...}` line. Write exactly the
 Each file is `inline: true` with `layout: post`, `related_posts: false`. Newest last in this list.
 
 1. `2026-XX-XX-futa-graduation.md` — `TODO(shayo) date` — "Graduated from FUTA with First Class Honours in Software Engineering."
-2. `2026-XX-XX-ecat-accepted.md` — `TODO(shayo) acceptance date` — "Our paper *Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System* was accepted for presentation at ECAT'26, School of Computing, FUTA."
-3. `2026-XX-XX-asbami-submitted.md` — `TODO(shayo) date` — "Submitted *Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System* to ASBAMI 2026. Under review."
+2. `2026-XX-XX-ecat-accepted.md` — `TODO(shayo) acceptance date` — "Our paper _Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System_ was accepted for presentation at ECAT'26, School of Computing, FUTA."
+3. `2026-XX-XX-asbami-submitted.md` — `TODO(shayo) date` — "Submitted _Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System_ to ASBAMI 2026. Under review."
 4. `2026-XX-XX-nysc.md` — `TODO(shayo) date` — "Began NYSC service in Delta State."
 5. `2026-07-15-ecat-presentation.md` — "Presented at ECAT'26 in Akure." — `TODO(shayo) keep only if you presented; otherwise delete.`
 
@@ -189,7 +189,7 @@ Every project file: `layout: page`, a one-line `description`, `img: assets/img/p
 `importance` number, and a `category` from the list above. Order below is the intended `importance`.
 
 **1 — `1_vlm_rag_skin_diagnosis.md`** · category `research` · `related_publications: true`
-Title: *VLM-RAG skin disease diagnosis and information system*
+Title: _VLM-RAG skin disease diagnosis and information system_
 Content: fine-tuned a vision–language model for skin lesion images and paired it with a
 retrieval-augmented generation layer so answers are grounded in retrievable dermatological text.
 Basis of both 2026 papers. Cite them with `{% cite olatunde2026integrated %}` and
@@ -197,13 +197,13 @@ Basis of both 2026 papers. Cite them with `{% cite olatunde2026integrated %}` an
 `TODO(shayo)` — datasets used, base model checkpoint, evaluation metric and result, repo link.
 
 **2 — `2_taxman.md`** · category `research`
-Title: *Taxman — a multimodal agent for Nigerian tax filing*
+Title: _Taxman — a multimodal agent for Nigerian tax filing_
 Content: an n8n-orchestrated AI agent that accepts text, images, voice and PDF/CSV input, with a
 RAG layer grounded in the Nigeria Tax Act 2025, so guidance can be traced back to statute.
 `TODO(shayo)` — screenshot or architecture diagram, current status, whether the repo is public.
 
 **3 — `3_revenue_systems.md`** · category `systems`
-Title: *Revenue systems for a state joint revenue board*
+Title: _Revenue systems for a state joint revenue board_
 Content: product management and release documentation for three production systems — taxpayer
 identification, an e-receipt payment management platform (prepaid organisation wallets, payment
 profile settlement, reversals, receipts and reports), and a fleet management platform (web portal
@@ -216,28 +216,28 @@ Only if you want fleet separate from #3 rather than folded into it. Same permiss
 `TODO(shayo)` — keep or delete this file.
 
 **5 — `5_abbis_farm.md`** · category `systems`
-Title: *Abbis Farm — commerce and operations platform*
+Title: _Abbis Farm — commerce and operations platform_
 Content: a Next.js 15 App Router e-commerce, POS and operations platform for a Nigerian red palm
 oil producer with a mill in Iwo, Osun State — Prisma/Postgres, Paystack payments, Cloudinary media,
 Resend mail, JWT admin auth.
 `TODO(shayo)` — live URL if it is public, and a screenshot of the storefront and POS.
 
 **6 — `6_agent_evaluation_tasks.md`** · category `side projects`
-Title: *Authoring evaluation tasks for coding agents*
+Title: _Authoring evaluation tasks for coding agents_
 Content: authored SWE-Bench-Pro-style tasks against Python repositories — hidden test patches,
 fail-to-pass / pass-to-pass separation, and a grading harness — plus a precision-constrained ML
 engineering task for an agent-evaluation platform.
 `TODO(shayo)` — say which parts you can name publicly.
 
 **7 — `7_bible_memory_tools.md`** · category `side projects`
-Title: *Quiz and memory tools for teenagers*
+Title: _Quiz and memory tools for teenagers_
 Content: small web tools built for church youth ministry — Bible memory games and quizzes used
 with teenagers, part of a broader interest in skills-focused programming for Nigerian secondary
 school students.
 `TODO(shayo)` — screenshot, and a link if any of them are hosted.
 
 **8 — `8_webgl_network_scene.md`** · category `side projects`
-Title: *WebGL network scene*
+Title: _WebGL network scene_
 Content: an interactive Three.js network animation — the visual language behind the TekSphere
 "living motherboard" site redesign.
 `TODO(shayo)` — keep only if you can host or GIF it; a project page with no visual is weak.
