@@ -2,7 +2,6 @@
 layout: page
 title: Fleet management platform
 description: Centralised web portal and mobile app with two-level trip approvals and asset tracking.
-img: assets/img/projects/fleet_management.jpg
 importance: 4
 category: systems
 ---

@@ -2,73 +2,181 @@ cv:
   name: Emmanuel Ayomide Balogun
   label: Product Manager & AI Researcher
   location: Lagos, Nigeria
-  email: TODO(shayo)
+  email: oluwashayobalogun@gmail.com
+  phone: "+234 903 585 0140"
 
   social_networks:
     - network: GitHub
       username: oluwashayo
     - network: LinkedIn
-      username: TODO(shayo)
+      username: emmanuel-balogun-35a1a1249
 
   sections:
     Education:
       - institution: Federal University of Technology, Akure (FUTA)
-        location: Akure, Ondo State, Nigeria
+        location: Ondo, Nigeria
         area: Software Engineering
-        studyType: B.Tech (First Class Honours)
-        start_date: TODO(shayo)
-        end_date: TODO(shayo)
-        score: TODO(shayo) # CGPA if you want it shown
+        studyType: B.Tech. (First Class Honours)
+        start_date: "2019-11"
+        end_date: "2025-09"
+        score: "CGPA 4.54/5.00 (3.792/4.00 Scholaro equivalent)"
         highlights:
-          - "Final-year research: Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System"
+          - "Thesis: Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System (Supervisor: Olukemi Victoria Olatunde)"
+          - "Relevant coursework: Differential Equations, Linear Algebra, Operations Research, Data Analysis, Data Structures and Algorithms"
 
     Experience:
-      - company: TekSphere Global Services Limited
+      - company: Teksphere Global Services Limited
         position: Product Manager
         location: Lagos, Nigeria
-        start_date: TODO(shayo)
+        start_date: "2026-01"
         end_date: Present
-        summary: Product management for state joint revenue board production platforms.
+        summary: "Owned product roadmap for three government-facing platforms delivered to the Joint Revenue Board (JRB) of Nigeria under the JRB Act 2025, coordinating seven engineers and designers."
         highlights:
-          - "Led product management for a state joint revenue board's taxpayer identification system, e-receipt payment management platform (organisation wallets, payment profiles, settlement, reversals, receipts, reports), and fleet management platform (web portal and mobile app with two-level trip approval)."
-          - "Authored comprehensive system user manuals and technical API documentation."
-          - "Conducted role-based executive and operational user training."
+          - "Led the full lifecycle of the Tax ID System, pairing a consumer portal for Tax ID and certificate retrieval (NIN for individuals, CAC for corporates and cooperatives) with a JRB admin portal for taxpayer management, approvals, certificate issuance, and personnel administration."
+          - "Delivered the E-Receipt System, digitising revenue-collection acknowledgements and cutting paper-based processing time by 95%."
+          - "Delivered the Fleet Management System, a real-time tracking platform covering 30+ government vehicles, contributing directly to front-end and back-end development."
+          - "Translated stakeholder requirements into epics with acceptance criteria across sprints, ran UAT, and served as primary client-facing representative for demos and progress reviews with JRB executives."
+          - "Automated Slack-to-Jira status syncing with an n8n workflow, removing four hours per week of manual status chasing and auto-triggering testing and UAT."
+
+      - company: Dept. of Software Engineering, FUTA
+        position: Undergraduate Research Assistant (V-SIDS)
+        location: Akure, Nigeria
+        start_date: "2024-05"
+        end_date: "2025-08"
+        summary: "VLM-RAG-Powered Skin Disease Diagnosis and Information System (Supervisor: Olukemi Victoria Olatunde)."
+        highlights:
+          - "Fine-tuned LLaVA-1.5 with Low-Rank Adaptation (rank 128, alpha 256) on HAM10000 (10,015 dermatoscopic images across seven pigmented-lesion classes), auto-generating instruction–response training pairs with DeepSeek-VL2, reaching a macro-F1 of 0.89 on held-out 20% test split."
+          - "Designed dynamic retrieval layer replacing static vector store with live search via Tavily API restricted to trusted-domain allow-list (WHO, Mayo Clinic, WebMD, AAD), injecting top three passages into prompt to suppress hallucination."
+          - "Benchmarked against GPT-4o and Gemini 2.0 Flash: factual correctness rose from 0.80 (VLM only) to 0.88 (static RAG) to 0.94 (live web RAG), versus 0.67 for GPT-4o and 0.53 for Gemini 2.0 Flash."
+          - "Ran 50-case human evaluation on real volunteer photographs scored by two independent reviewers: factual correctness 0.94, safety 0.92, clarity 0.86, helpfulness 0.84."
+          - "Deployed end-to-end system: fine-tuned model on Hugging Face, FastAPI inference backend, and Next.js Progressive Web App frontend."
+
+      - company: Fuspay Technology Inc.
+        position: Technical Support Engineer
+        location: Remote
+        start_date: "2024-08"
+        end_date: "2025-08"
+        summary: "Intern August – December 2024; full-time January – August 2025."
+        highlights:
+          - "Conducted end-to-end testing of API integrations, performance, and security using Postman across 48+ endpoints, identifying, root-causing, and reporting 20+ bugs and performance issues."
+          - "Resolved 78+ critical customer-raised technical issues with engineering and support teams at an average turnaround of three hours, and reviewed 300+ KYC submissions."
+          - "Wrote user guides, API documentation, and product manuals for technical and non-technical audiences, turning recurring issues into product improvement recommendations."
+
+      - company: School of Computing, FUTA
+        position: IT Laboratory Assistant
+        location: Akure, Nigeria
+        start_date: "2023-07"
+        end_date: "2024-03"
+        summary: "Installed, configured, and maintained 150+ lab workstations and peripheral devices, providing first-line hardware and software support to 100+ students per semester."
+
+    Teaching Experience:
+      - company: School of Computing, FUTA
+        position: Undergraduate Student Tutor
+        location: Akure, Nigeria
+        start_date: "2022-01"
+        end_date: "2024-06"
+        highlights:
+          - "Taught first- and second-order differential equations and Laplace transforms to over 40 second-year undergraduates."
+          - "Taught data analysis (statistical sets, probability theorems, linear regression) and operations research (linear programming, simplex method, transportation/assignment problems) to over 25 students, and trained students in Windows penetration testing."
+
+      - company: Freelance
+        position: Physics & Mathematics Teacher, GCSE / SQA National 5
+        location: Remote
+        start_date: "2022-07"
+        end_date: "2025-05"
+        summary: "Taught Physics and Mathematics to GCSE and SQA National 5 candidates, developing lesson plans and delivering virtual instruction; every student improved by at least one grade band."
+
+      - company: Precision College
+        position: Physics & Chemistry Teacher (part-time)
+        location: Akure, Nigeria
+        start_date: "2020-02"
+        end_date: "2020-04"
+        summary: "Taught Physics and Chemistry to 13 senior secondary students, developed lesson plans, and assessed understanding through assignments, tests, and practical projects."
 
     Publications:
+      - title: "Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System"
+        authors:
+          - Olukemi Victoria Olatunde
+          - Emmanuel Ayomide Balogun
+          - Victoria Ibiyemi Omoniyi
+        publisher: "5th African Symposium on Big Data, Analytics and Machine Intelligence (ASBAMI 2026), Federal University of Technology Akure, Nigeria"
+        date: "2026"
+        summary: "Under review. Fine-tuned LLaVA-1.5 with LoRA on HAM10000 paired with live web search over WHO and Mayo Clinic; macro-F1 0.89 and 94% factual correctness."
+
       - title: "Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System"
         authors:
           - Olukemi Victoria Olatunde
           - Emmanuel Ayomide Balogun
           - Victoria Ibiyemi Omoniyi
         publisher: "1st International Conference on Emerging Computing Applications and Technologies (ECAT'26), School of Computing, Federal University of Technology Akure"
-        date: 2026-07-15
+        date: "2026-07-15"
         summary: "Accepted for presentation, 15--16 July 2026. Selected papers to appear in the International Journal of Computing and Digital Innovation."
 
-      - title: "Development of a VLM-RAG-Powered Skin Disease Diagnosis and Information System"
-        authors:
-          - Olukemi Victoria Olatunde
-          - Emmanuel Ayomide Balogun
-          - Victoria Ibiyemi Omoniyi
-        publisher: "5th African Symposium on Big Data, Analytics and Machine Intelligence (ASBAMI 2026), Federal University of Technology Akure"
-        date: 2026
-        summary: "Under review."
+    Projects:
+      - name: "Taxman — Tax Filing and Financial Documentation AI Agent"
+        summary: "Built an n8n-based AI agent that files taxes and logs financial documentation from natural language input across text, images, voice notes, and PDF/CSV documents, with a RAG system grounded in the Nigeria Tax Act 2025."
 
-    Research Interests:
-      - name: Core Focus Areas
-        keywords: "Vision-language models, medical image analysis, multimodal clinical data fusion, retrieval-augmented generation (RAG), trustworthy generative AI (grounding, attribution, uncertainty)"
+      - name: "Tomato Leaf Disease Detection — Mobile Deep Learning for Smallholder Farmers"
+        summary: "Trained a MobileNetV2 transfer-learning classifier on PlantVillage (~18,000 images, ten classes) reaching 92% validation accuracy; quantised to TensorFlow Lite for offline inference on low-end smartphones."
 
-    Skills:
-      # TODO(shayo) confirm or adjust this skills list so it reflects your exact toolset
-      - name: ML & LLM
-        keywords: "Fine-tuning, RAG pipelines, PyTorch, Weights & Biases, Vision-Language Models (LLaVA)"
-      - name: Engineering
-        keywords: "Python, TypeScript, Next.js, PostgreSQL, Prisma, n8n"
-      - name: Product Management
-        keywords: "Requirements engineering, Release documentation, API documentation, User training"
+    Leadership & Volunteer Experience:
+      - company: Akure Tech Hub
+        position: AR/VR Community Lead
+        location: Akure, Nigeria
+        start_date: "2024-11"
+        end_date: "2025-09"
+        summary: "Organised the hub's first AR bootcamp using TikTok Effect House, training 20 participants; ran VR training sessions and mentored 87 community members."
+
+      - company: Association of Computing Students, FUTA Chapter
+        position: President
+        location: Akure, Nigeria
+        start_date: "2023-06"
+        end_date: "2024-08"
+        summary: "Led association of 2,000+ members: partnered with Google Developer Student Club on 8-week bootcamp reaching 250+ students, launched first AI training academy with 20 participants."
+
+      - company: Dept. of Software Engineering, FUTA
+        position: Class Representative
+        location: Akure, Nigeria
+        start_date: "2020-01"
+        end_date: "2025-09"
+        summary: "Represented 62 students as key intermediary with the Head of Department and lecturers, advocating for student interests, shaping policy, and mentoring peers."
+
+      - company: Impact Leaders Club, FUTA
+        position: Campus Ambassador
+        location: Akure, Nigeria
+        start_date: "2023-01"
+        end_date: "2024-08"
+        summary: "Delivered community outreach programmes aligned with UN Sustainable Development Goals on poverty eradication and quality education."
+
+      - company: Student Representative Council, FUTA
+        position: Student Legislator
+        location: Akure, Nigeria
+        start_date: "2023-01"
+        end_date: "2023-04"
+        summary: "Authored, debated, and passed two pieces of legislation shaping student union policy, and scrutinised and approved the union's annual budget."
 
     Awards:
-      - title: First Class Honours
+      - title: Sessional Dean's List Recognition for First Class Students
         awarder: Federal University of Technology, Akure (FUTA)
-        date: TODO(shayo)
-        summary: "B.Tech in Software Engineering"
-        # TODO(shayo) add any other academic, leadership or professional awards
+        date: "2025"
+        summary: "Recognized for First Class academic performance across 7 of 10 academic sessions (2020 – 2025)."
+
+      - title: Visionary Vanguard Award
+        awarder: Association of Computing Students
+        date: "2024"
+
+      - title: Best Class Representative Award
+        awarder: Association of Software Engineering Students
+        date: "2024"
+
+    Conferences & Workshops:
+      - label: "Conferences"
+        details: "Deep Learning Indaba (August 2025) · DevFest Akure, Google Developer Group (December 2024) · Lisk Africa (April 2024)"
+
+    Skills:
+      - name: Technical
+        keywords: "Machine Learning (algorithm development, fine-tuning, deployment, RAG), Web Development & Design, Data Analysis & Visualisation, API Documentation, Cybersecurity (SOC analysis, API security)"
+      - name: Product Management
+        keywords: "Roadmapping, Requirements Gathering & Prioritisation, Agile/Scrum (Jira), Stakeholder Management, UAT, Client Demos & Presentations"
+      - name: Languages & Tools
+        keywords: "Python, SQL, HTML, CSS, C (beginner) · Git, GitHub, Jira, GitBook, n8n, Postman, Hugging Face Transformers, PyTorch, TensorFlow / TF Lite"

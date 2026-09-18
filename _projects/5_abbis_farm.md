@@ -2,7 +2,6 @@
 layout: page
 title: Abbis Farm — commerce and operations platform
 description: Next.js 15 App Router e-commerce, POS, and operations platform for a red palm oil producer.
-img: assets/img/projects/abbis_farm.jpg
 importance: 5
 category: systems
 ---

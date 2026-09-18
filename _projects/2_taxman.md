@@ -2,7 +2,6 @@
 layout: page
 title: Taxman — a multimodal agent for Nigerian tax filing
 description: Multimodal AI agent orchestrated with n8n and grounded in the Nigeria Tax Act 2025.
-img: assets/img/projects/taxman.jpg
 importance: 2
 category: research
 ---

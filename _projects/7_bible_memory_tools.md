@@ -2,7 +2,6 @@
 layout: page
 title: Quiz and memory tools for teenagers
 description: Small web tools, quizzes, and Bible memory games built for church youth ministry.
-img: assets/img/projects/bible_memory_tools.jpg
 importance: 7
 category: side projects
 ---

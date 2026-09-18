@@ -2,7 +2,6 @@
 layout: page
 title: WebGL network scene
 description: Interactive Three.js network animation representing a living motherboard.
-img: assets/img/projects/webgl_network_scene.jpg
 importance: 8
 category: side projects
 ---

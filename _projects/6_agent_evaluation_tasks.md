@@ -2,7 +2,6 @@
 layout: page
 title: Authoring evaluation tasks for coding agents
 description: SWE-Bench-Pro-style repository evaluation tasks and precision-constrained ML grading harnesses.
-img: assets/img/projects/agent_evaluation_tasks.jpg
 importance: 6
 category: side projects
 ---

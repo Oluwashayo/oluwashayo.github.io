@@ -2,7 +2,6 @@
 layout: page
 title: Revenue systems for a state joint revenue board
 description: Product management and release documentation for production tax ID, e-receipt, and fleet platforms.
-img: assets/img/projects/revenue_systems.jpg
 importance: 3
 category: systems
 ---
