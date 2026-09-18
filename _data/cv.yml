@@ -34,14 +34,6 @@ cv:
           - "Authored comprehensive system user manuals and technical API documentation."
           - "Conducted role-based executive and operational user training."
 
-    Service:
-      - company: National Youth Service Corps (NYSC)
-        position: Corps Member
-        location: Delta State, Nigeria
-        start_date: TODO(shayo)
-        end_date: TODO(shayo)
-        summary: Currently serving mandatory NYSC year in Delta State.
-
     Publications:
       - title: "Integrated VLM-RAG-Powered Skin Disease Diagnosis and Information System"
         authors:

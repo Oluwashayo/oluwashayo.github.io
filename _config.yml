@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Shayo Balogun
+title: Emmanuel Ayomide Balogun
 first_name: Emmanuel
 middle_name: Ayomide
 last_name: Balogun
 contact_note: >
   Email is the fastest way to reach me — I answer within a day or two.
 description: >
-  Emmanuel Ayomide (Shayo) Balogun — product manager at TekSphere Global Services and
+  Emmanuel Ayomide Balogun — product manager at TekSphere Global Services and
   vision–language model researcher working on AI for healthcare, medical image analysis
   and retrieval-augmented diagnosis systems.
 footer_text: >
@@ -233,7 +233,6 @@ kramdown:
 include: ["_pages"]
 exclude:
   - AGENTS.md
-  - SITE_CONTENT_BRIEF.md
   - al-folio-upgrade-report.md
   - bin/
   - CLAUDE.md
